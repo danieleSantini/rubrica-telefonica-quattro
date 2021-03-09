@@ -14,9 +14,9 @@ public interface ServiceRubrica {
 
     DtoRubrica rimuoviContatto(Contatto c);
 
-    DtoRubrica reset();
+   
 
-    DtoRubrica aggiornaLista();
+    DtoRubrica aggiornaRubrica();
 
     DtoRubrica cercaContatto(String parametro);
   
