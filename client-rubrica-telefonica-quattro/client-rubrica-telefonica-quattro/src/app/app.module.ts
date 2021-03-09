@@ -8,6 +8,7 @@ import { LoginErrorComponent } from './login-error/login-error.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ConteggioComponent } from './conteggio/conteggio.component';
 import { SearchPageComponent } from './search-page/search-page.component';
+import { CampiComponent } from './campi/campi.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SearchPageComponent } from './search-page/search-page.component';
     LoginErrorComponent,
     MainPageComponent,
     ConteggioComponent,
-    SearchPageComponent
+    SearchPageComponent,
+    CampiComponent
   ],
   imports: [
     BrowserModule,

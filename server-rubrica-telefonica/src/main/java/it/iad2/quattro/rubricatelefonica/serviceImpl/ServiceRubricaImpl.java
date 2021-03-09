@@ -17,9 +17,14 @@ public class ServiceRubricaImpl implements ServiceRubrica {
 
     @Override
     public DtoRubrica inserisciContatto(Contatto c) {
-        //salviamo nella repository
-        rubricaRepository.save(c);
-        return aggiornaRubrica();
+        DtoRubrica dto = new DtoRubrica();
+        List<Contatto> listaContatti = rubricaRepository.findAll();
+        if (listaContatti == null) {
+            dto.setListaContatti(new ArrayList<>());
+        } else {
+            dto.setListaContatti(listaContatti);
+        }
+        return dto;
     }
 
     @Override
@@ -41,7 +46,7 @@ public class ServiceRubricaImpl implements ServiceRubrica {
             dto.setListaContatti(listaContatti);
         }
         return dto;
-        
+
     }
 
     @Override
