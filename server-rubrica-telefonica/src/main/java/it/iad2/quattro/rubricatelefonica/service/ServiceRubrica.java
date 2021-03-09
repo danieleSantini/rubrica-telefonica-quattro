@@ -1,14 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package it.iad2.quattro.rubricatelefonica.service;
+
+import it.iad2.quattro.rubricatelefonica.dto.DtoRubrica;
+import it.iad2.quattro.rubricatelefonica.model.Contatto;
 
 /**
  *
  * @author utente
  */
 public interface ServiceRubrica {
-    
+
+    DtoRubrica inserisciContatto(Contatto c);
+
+    DtoRubrica rimuoviContatto(Contatto c);
+
+    DtoRubrica reset();
+
+    DtoRubrica aggiornaLista();
+
+    DtoRubrica cercaContatto(String parametro);
+  
 }

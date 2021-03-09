@@ -1,14 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package it.iad2.quattro.rubricatelefonica.dto;
 
-/**
- *
- * @author utente
- */
+import it.iad2.quattro.rubricatelefonica.model.Contatto;
+import java.util.List;
+
+
 public class DtoRubrica {
-    
+  List<Contatto> listaContatti;
+
+    public DtoRubrica() {
+    }
+
+    public DtoRubrica(List<Contatto> listaContatti) {
+        this.listaContatti = listaContatti;
+    }
+
+    public List<Contatto> getListaContatti() {
+        return listaContatti;
+    }
+
+    public void setListaContatti(List<Contatto> listaContatti) {
+        this.listaContatti = listaContatti;
+    }
+
+    @Override
+    public String toString() {
+        return "DtoRubrica{" + "listaContatti=" + listaContatti + '}';
+    }
+  
 }

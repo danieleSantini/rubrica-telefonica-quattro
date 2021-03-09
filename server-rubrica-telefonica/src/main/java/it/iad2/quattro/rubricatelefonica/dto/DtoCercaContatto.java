@@ -1,14 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package it.iad2.quattro.rubricatelefonica.dto;
 
-/**
- *
- * @author utente
- */
 public class DtoCercaContatto {
+    private String parametro;
+
+    public DtoCercaContatto() {
+    }
+
+    public DtoCercaContatto(String parametro) {
+        this.parametro = parametro;
+    }
+
+    public String getParametro() {
+        return parametro;
+    }
+
+    public void setParametro(String parametro) {
+        this.parametro = parametro;
+    }
+
+    @Override
+    public String toString() {
+        return "DtoCercaContatto{" + "parametro=" + parametro + '}';
+    }
+    
     
 }
