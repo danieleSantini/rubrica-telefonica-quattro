@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Contatto } from './contatto';
 
 @Component({
   selector: 'app-campi',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./campi.component.css']
 })
 export class CampiComponent implements OnInit {
+  contatto:Contatto;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  
 }
